@@ -44,4 +44,5 @@ RUN git config --global http.sslverify "false"
 RUN bower cache clean
 RUN mkdir ~/.kurento
 RUN echo "kms.url.provider=de.fhg.fokus.nubomedia.kmc.KmsUrlProvider" > ~/.kurento/config.properties
+RUN echo "repository.url.provider=de.fhg.fokus-nubomedia.PaasRepositoryProvider" >> ~/.kurento/config.properties
 RUN chown -R nubomedia:nubomedia /home/nubomedia
