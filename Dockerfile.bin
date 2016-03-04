@@ -1,0 +1,6 @@
+FROM fiadliel/java8-jre
+
+MAINTAINER Nubomedia
+
+RUN mkdir ~/.kurento
+RUN echo "kms.url.provider=de.fhg.fokus.nubomedia.kmc.KmsUrlProvider" > ~/.kurento/config.properties
