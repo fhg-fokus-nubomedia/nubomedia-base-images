@@ -4,3 +4,4 @@ MAINTAINER Nubomedia
 
 RUN mkdir ~/.kurento
 RUN echo "kms.url.provider=de.fhg.fokus.nubomedia.kmc.KmsUrlProvider" > ~/.kurento/config.properties
+RUN echo "repository.url.provider=de.fhg.fokus.nubomedia.PaasRepositoryProvider" >> ~/.kurento/config.properties
